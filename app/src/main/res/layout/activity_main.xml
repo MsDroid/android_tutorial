@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+<!--   text -->
+   <TextView
+       android:id="@+id/result"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:text="Hello world"
+       android:layout_gravity="center"
+       android:textSize="30dp"
+       android:layout_marginTop="100dp"
+       />
+
+   <!-- Input Text Field -->
+   <EditText
+       android:id="@+id/firstName"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:hint="Enter first Name"
+       android:autofillHints="name"
+       />
+
+<!-- Input text  -->
+   <EditText
+       android:id="@+id/secondName"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center"
+       android:hint="Enter Second Name"
+       android:autofillHints="name"
+       android:inputType="text"
+       />
+
+<!-- Button -->
+   <Button
+       android:id="@+id/button"
+       android:layout_gravity="center"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:text="Add"
+       ></Button>
+
+
+   <TextView
+       android:id="@+id/sumResult"
+       android:layout_height="wrap_content"
+       android:layout_width="wrap_content"
+       android:text=""
+       android:layout_gravity="center"
+       android:textSize="30dp"
+       android:layout_marginTop="100dp"
+       />
+
+
+</LinearLayout>
