@@ -8,9 +8,9 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-<!--   text -->
+   <!--   text -->
    <TextView
-       android:id="@+id/result"
+       android:id="@+id/heading"
        android:layout_height="wrap_content"
        android:layout_width="wrap_content"
        android:text="Hello world"
@@ -19,46 +19,74 @@
        android:layout_marginTop="100dp"
        />
 
-   <!-- Input Text Field -->
-   <EditText
-       android:id="@+id/firstName"
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:layout_gravity="center"
-       android:hint="Enter first Name"
-       android:autofillHints="name"
-       />
 
-<!-- Input text  -->
-   <EditText
-       android:id="@+id/secondName"
-       android:layout_width="wrap_content"
+   <TableLayout
+       android:layout_margin="30dp"
        android:layout_height="wrap_content"
-       android:layout_gravity="center"
-       android:hint="Enter Second Name"
-       android:autofillHints="name"
-       android:inputType="text"
-       />
+       android:layout_width="match_parent"
+       >
+      <TableRow>
+         <!-- Input Text Field -->
+         <EditText
+             android:layout_weight="1"
+             android:id="@+id/firstName"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:hint="Enter first Num"
+             android:autofillHints="name"
+             />
 
-<!-- Button -->
-   <Button
-       android:id="@+id/button"
-       android:layout_gravity="center"
+         <!-- Input text  -->
+         <EditText
+             android:layout_weight="1"
+             android:id="@+id/secondName"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:hint="@string/enter_second_num"
+             android:autofillHints="name"
+             android:inputType="text"
+             />
+      </TableRow>
+
+      <TableRow>
+         <Button
+             android:layout_weight="1"
+             android:id="@+id/add"
+             android:layout_gravity="center"
+             android:layout_height="wrap_content"
+             android:layout_width="wrap_content"
+             android:text="Add"
+             />
+
+         <Button
+             android:layout_weight="1"
+             android:id="@+id/sub"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_gravity="center"
+             android:text="Sub"/>
+      </TableRow>
+   </TableLayout>
+
+
+   <TableRow
        android:layout_height="wrap_content"
-       android:layout_width="wrap_content"
-       android:text="Add"
-       ></Button>
+       android:layout_width="match_parent">
+      <TextView
+          android:id="@+id/sumResult"
+          android:layout_height="wrap_content"
+          android:layout_width="wrap_content"
+          android:text=""
+          android:layout_gravity="center"
+          android:textSize="30sp"
+          android:layout_marginTop="100dp"
+          />
+   </TableRow>
 
 
-   <TextView
-       android:id="@+id/sumResult"
-       android:layout_height="wrap_content"
-       android:layout_width="wrap_content"
-       android:text=""
-       android:layout_gravity="center"
-       android:textSize="30dp"
-       android:layout_marginTop="100dp"
-       />
+
 
 
 </LinearLayout>

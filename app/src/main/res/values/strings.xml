@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">androidTutorial</string>
+    <string name="enter_second_num">Enter Second Num</string>
 </resources>
