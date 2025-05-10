@@ -8,85 +8,35 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-   <!--   text -->
-   <TextView
-       android:id="@+id/heading"
-       android:layout_height="wrap_content"
-       android:layout_width="wrap_content"
-       android:text="Hello world"
-       android:layout_gravity="center"
-       android:textSize="30dp"
-       android:layout_marginTop="100dp"
-       />
-
-
-   <TableLayout
-       android:layout_margin="30dp"
-       android:layout_height="wrap_content"
+   <RelativeLayout
        android:layout_width="match_parent"
-       >
-      <TableRow>
-         <!-- Input Text Field -->
-         <EditText
-             android:layout_weight="1"
-             android:id="@+id/firstName"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_gravity="center"
-             android:hint="Enter first Num"
-             android:autofillHints="name"
-             />
+       android:layout_height="757dp">
 
-         <!-- Input text  -->
-         <EditText
-             android:layout_weight="1"
-             android:id="@+id/secondName"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_gravity="center"
-             android:hint="@string/enter_second_num"
-             android:autofillHints="name"
-             android:inputType="text"
-             />
-      </TableRow>
-
-      <TableRow>
-         <Button
-             android:layout_weight="1"
-             android:id="@+id/add"
-             android:layout_gravity="center"
-             android:layout_height="wrap_content"
-             android:layout_width="wrap_content"
-             android:text="Add"
-             />
-
-         <Button
-             android:layout_weight="1"
-             android:id="@+id/sub"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_gravity="center"
-             android:text="Sub"/>
-      </TableRow>
-   </TableLayout>
-
-
-   <TableRow
-       android:layout_height="wrap_content"
-       android:layout_width="match_parent">
-      <TextView
-          android:id="@+id/sumResult"
-          android:layout_height="wrap_content"
+      <EditText
+          android:id="@+id/firstText"
           android:layout_width="wrap_content"
-          android:text=""
-          android:layout_gravity="center"
-          android:textSize="30sp"
-          android:layout_marginTop="100dp"
+          android:layout_height="wrap_content"
+          android:text="Text 1" />
+
+
+      <EditText
+          android:layout_below="@+id/firstText"
+          android:id="@+id/secondText"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Text 2"
           />
-   </TableRow>
+
+      <Button
+          android:layout_below="@+id/secondText"
+          android:id="@+id/btnAdd"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Add"
+          />
 
 
-
+   </RelativeLayout>
 
 
 </LinearLayout>
